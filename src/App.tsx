@@ -5,8 +5,7 @@ import { useState } from "react";
 
 export default function App() {
   const [url, setUrl] = useState("");
-  const isURL =
-    url.startsWith("https://") && !!url.match(/.(mp4|ts|webm|flv)$/);
+  const isURL = url.startsWith("https://");
 
   return (
     <MantineProvider withGlobalStyles withNormalizeCSS>
